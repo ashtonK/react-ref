@@ -3,6 +3,7 @@ import {Appbar} from './appbar';
 import {Navbar} from './navbar';
 
 export default function Shell(props) {
+    console.log('On Shell');
     return (
         <div>
             <Appbar />

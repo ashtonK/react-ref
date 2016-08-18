@@ -1,12 +1,13 @@
 import React from 'react';
-import {observer} from 'mobx-react';
-import { Link} from 'react-router';
+import {Link} from 'react-router';
+import {Appbar} from '../data-processing/shell/components/appbar';
 
-@observer(['store'])
 export default class Login extends React.Component {
     render() {
+        console.log('Login');
         return (
             <div>
+                <Appbar></Appbar>
                 <h2>Login Page</h2>
                 <Link to="/processing">Home</Link>
             </div>
