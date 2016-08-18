@@ -11,6 +11,5 @@ export let routes = (
             <IndexRoute component={ManageUsers}/>
             <Route path="ManageUsers" component={ManageUsers}></Route>
         </Route>
-        // <Route path="processing" component={Shell}></Route>
     </div>
 );
