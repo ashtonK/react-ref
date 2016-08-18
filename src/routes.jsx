@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route, IndexRoute} from 'react-router';
 import {Shell} from './data-processing/shell';
-import {Login} from './Login';
+import {Login} from './login';
 import {ManageUsers} from './data-processing/ManageUsers';
 
 export let routes = (
