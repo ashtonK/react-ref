@@ -1,6 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router';
-import {Appbar} from '../data-processing/shell/components/appbar';
+import {Appbar} from '../../shared/appbar';
 
 
 export default class Login extends React.Component {

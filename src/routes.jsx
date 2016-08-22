@@ -10,7 +10,7 @@ import {SurveyInfo} from './data-collection/survey-info';
 import {SurveyQuestions} from './data-collection/survey-questions';
 import {SurveyConfirm} from './data-collection/survey-confirm';
 
-import {Login} from './login';
+import {Login} from './data-processing/login';
 import {ManageUsers} from './data-processing/manage-users';
 import {AdminDash} from './data-processing/admin-dash-view';
 
@@ -28,7 +28,6 @@ export let routes = (
         <Route path="processing" component={DataProcessing}>
             <IndexRoute path="AdminDash" component={AdminDash}></IndexRoute>
             <Route path="ManageUsers" component={ManageUsers}></Route>
-            <Route path="CreateReview" component={CreateReview}></Route>
         </Route>
     </div>
 );
