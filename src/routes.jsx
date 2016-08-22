@@ -13,6 +13,7 @@ import {SurveyConfirm} from './data-collection/survey-confirm';
 import {Login} from './data-processing/login';
 import {ManageUsers} from './data-processing/manage-users';
 import {AdminDash} from './data-processing/admin-dash-view';
+import {CreateReview} from './data-processing/create-review';
 
 export let routes = (
     <div>
@@ -26,8 +27,9 @@ export let routes = (
         <Route path="invalid" component={Invalid}/>
         <Route path="error" component={Error}/>
         <Route path="processing" component={DataProcessing}>
-            <IndexRoute path="AdminDash" component={AdminDash}></IndexRoute>
-            <Route path="ManageUsers" component={ManageUsers}></Route>
+            <IndexRoute path="adminDash" component={AdminDash}></IndexRoute>
+            <Route path="manageUsers" component={ManageUsers}></Route>
+            <Route path="createReview" component={CreateReview}></Route>
         </Route>
     </div>
 );

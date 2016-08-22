@@ -13,13 +13,13 @@ export default class Navbar extends React.Component {
             <nav>
                 <ul className={s.navigation}>
                     <li className={s.navListItem}>
-                        <IndexLink to="processing" className={s.navOption} activeClassName={s.active}>Home</IndexLink>
+                        <IndexLink to="/processing/adminDash" className={s.navOption} activeClassName={s.active}>Home</IndexLink>
                     </li>
                     <li className={s.navListItem}>
-                        <Link to="ManageUsers" className={s.navOption} activeClassName={s.active}>Manage Users</Link>
+                        <Link to="/processing/manageUsers" className={s.navOption} activeClassName={s.active}>Manage Users</Link>
                     </li>
                     <li className={s.navListItem}>
-                        <Link to="processing" className={s.navOption} activeClassName={s.active}>Create New Review</Link>
+                        <Link to="/processing/createReview" className={s.navOption} activeClassName={s.active}>Create New Review</Link>
                     </li>
                 </ul>
             </nav>
