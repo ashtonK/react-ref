@@ -1,0 +1,37 @@
+.navContainer {
+    background-color: white;
+    box-shadow: 0 0px 5px 0 #9e9e9e, 0 0px 0px 0 rgba(0, 0, 0, 0);
+    margin:inherit;
+    max-width: inherit;
+    width: 100%;
+    height: 95%;
+    nav-left: auto;
+    box-shadow: black;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.navLogo{
+    margin-left: 4%;
+    width: 8%;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+    /*Setting for min size of logo. So all Screen have same size*/
+    min-width:120px;
+}
+.navTitle{
+    margin-left: 1%;
+    color: #AEAAA4;
+    font-size: 150%;
+    padding-top: 0.25%;
+    align-self: center;
+}
+.navLogo{
+    margin-left: 4%;
+    width: 8%;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+    /*Setting for min size of logo. So all Screen have same size*/
+    min-width:120px;
+}

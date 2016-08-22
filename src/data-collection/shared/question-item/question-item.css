@@ -1,0 +1,16 @@
+.inputLabel{
+    font-size: 130%;
+    margin-bottom:1%;
+    color: #9e9e9e;
+}
+.inputArea{
+    background-color: #F6F6F5;
+    margin-bottom: 5%;
+}
+.participantInfoForm{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    flex-direction: column;
+}

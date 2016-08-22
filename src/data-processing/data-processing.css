@@ -1,0 +1,18 @@
+.mainPage{
+    margin-right: 20%;
+    margin-left: 4%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.progressNav{
+    width: 25%;
+}
+.pageContainer{
+    margin-left: 10%;
+    width: 50%;
+    /*Gap between conent and nav bar is always the same*/
+    margin-top: 40px;
+}
+

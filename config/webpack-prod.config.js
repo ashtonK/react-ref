@@ -3,9 +3,19 @@
 const webpack = require('webpack');
 const merge = require('webpack-merge');
 const webpackCommon = require('./webpack-common.config');
+const seedConfig = Object.assign({}, require('./seed-config.defaults'), require('../package.json').seedConfig);
+
 
 module.exports = merge(webpackCommon, {
     devtool: 'none',
+
+    devServer: {
+        port: seedConfig.port,
+        inline: true,
+        hot: true,
+        historyApiFallback: true,
+        stats: 'minimal'
+    },
 
     plugins: [
         new webpack.optimize.OccurrenceOrderPlugin(),

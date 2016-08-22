@@ -1,0 +1,9 @@
+.error{
+    color :#03C6EF;
+	margin-left: 4%;
+	margin-top: 1%;
+	display: inline-block;
+}
+.errorMessage{
+	display:inline-block;
+}

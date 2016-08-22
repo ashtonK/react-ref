@@ -19,7 +19,7 @@ export default class Navbar extends React.Component {
                         <Link to="ManageUsers" className={s.navOption} activeClassName={s.active}>Manage Users</Link>
                     </li>
                     <li className={s.navListItem}>
-                        <Link to="processing" className={s.navOption} activeClassName={s.active}>Create New LCP</Link>
+                        <Link to="processing" className={s.navOption} activeClassName={s.active}>Create New Review</Link>
                     </li>
                 </ul>
             </nav>

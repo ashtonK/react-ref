@@ -5,6 +5,7 @@ import RaisedButton from 'material-ui/RaisedButton';
 export default class ManageUsers extends React.Component {
 
     render() {
+        console.log('ManageUser');
         return (
             <div>
                 <h2>Manager Users Page</h2>

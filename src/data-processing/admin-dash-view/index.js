@@ -1,1 +1,1 @@
-export AdminDash from './components/admin-dash-view';
+export AdminDash from './admin-dash-view';

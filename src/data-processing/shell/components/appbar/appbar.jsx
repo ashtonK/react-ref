@@ -11,10 +11,13 @@ export default class Appbar extends React.Component {
     render() {
         console.log('Appbar');
         return(
-          <AppBar
-          title={this.state.title}
-          showMenuIconButton={false}
-          />
+          <div>
+            <img src='/PlatoLogoSmall.png' />
+            <AppBar
+            title={this.state.title}
+            showMenuIconButton={false}
+            />
+          </div>
         );
     }
 }

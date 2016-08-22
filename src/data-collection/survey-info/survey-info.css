@@ -1,0 +1,13 @@
+.participantInfoTitle{
+	display: -webkit-flex;
+	display: flex;
+	text-align: left;
+	color :#03C6EF;
+	font-style: bold;
+	margin-bottom: 30px;
+	font-size: 16pt;
+}
+.welcomeMessage{
+	margin-bottom: 2%;
+    margin-top: 2%;
+}

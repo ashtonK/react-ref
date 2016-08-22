@@ -1,0 +1,24 @@
+/*Page Styles*/
+.progressContainer{
+    justify-content: flex-start;
+    /*Gap between conent and nav bar is always the same*/
+    margin-top: 40px;
+}
+.progressCategory:hover{
+    cursor: pointer;
+}
+.card{
+    box-shadow: unset;
+}
+.cardContent {
+    text-transform: uppercase;
+    text-align: left;
+    padding: 3.5%;
+}
+.cardContent:hover{
+    background-color: #F6F6F5;
+}
+.catTitle{
+    font-size: 90%;
+    font-style: bold;
+}
