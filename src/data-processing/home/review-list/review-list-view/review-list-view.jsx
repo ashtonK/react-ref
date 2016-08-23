@@ -1,11 +1,11 @@
 import React from 'react';
 
-export default class AdminDashList extends React.Component {
+export default class ReviewListView extends React.Component {
 
     render() {
         return (
             <div>
-                <h3>Admin List</h3>
+                <h3>Review List View</h3>
             </div>
         );
     }
