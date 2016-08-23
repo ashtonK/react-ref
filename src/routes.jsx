@@ -12,7 +12,6 @@ import {SurveyConfirm} from './data-collection/survey-confirm';
 
 import {Login} from './data-processing/login';
 import {ManageUsers} from './data-processing/manage-users';
-<<<<<<< HEAD
 import {Home} from './data-processing/home';
 import {ReviewList} from './data-processing/home/review-list';
 import {ReviewPage} from './data-processing/home/review-page';
@@ -32,10 +31,10 @@ export let routes = (
         <Route path="error" component={Error}/>
         <Route path="processing" component={DataProcessing}>
 
-            <IndexRoute path="Home" component={Home}>
+            <IndexRoute component={Home}>
                 <IndexRoute path="/" component={ReviewList}></IndexRoute>
                 <Route path="review" component={ReviewPage}/>
-            </IndexRoute>
+            </Route>
             <Route path="manageUsers" component={ManageUsers}></Route>
             <Route path="createReview" component={CreateReview}></Route>
         </Route>
