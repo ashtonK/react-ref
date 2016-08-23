@@ -10,9 +10,9 @@ export default class ReviewList extends React.Component {
         console.log('review');
         return (
             <div>
-                <ReviewListFilter></ReviewListFilter>
-                <ReviewListView></ReviewListView>
-                <ReviewCardView></ReviewCardView>
+            <ReviewListFilter></ReviewListFilter>
+            <ReviewListView></ReviewListView>
+            <ReviewCardView></ReviewCardView>
             </div>
         );
     }

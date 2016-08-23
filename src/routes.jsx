@@ -29,10 +29,10 @@ export let routes = (
         <Route path="done" component={Done}/>
         <Route path="invalid" component={Invalid}/>
         <Route path="error" component={Error}/>
-        <Route path="processing" component={DataProcessing}>
-
-            <IndexRoute component={Home}>
-                <IndexRoute path="/" component={ReviewList}></IndexRoute>
+        <Route path="/processing" component={DataProcessing}>
+            <Route path="home" component={Home}>
+                <IndexRoute  component={ReviewList}>
+                </IndexRoute>
                 <Route path="review" component={ReviewPage}/>
             </Route>
             <Route path="manageUsers" component={ManageUsers}></Route>
