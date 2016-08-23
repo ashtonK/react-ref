@@ -13,7 +13,7 @@ export default class Navbar extends React.Component {
             <nav>
                 <ul className={s.navigation}>
                     <li className={s.navListItem}>
-                        <IndexLink to="/processing/adminDash" className={s.navOption} activeClassName={s.active}>Home</IndexLink>
+                        <IndexLink to="/processing/home" className={s.navOption} activeClassName={s.active}>Home</IndexLink>
                     </li>
                     <li className={s.navListItem}>
                         <Link to="/processing/manageUsers" className={s.navOption} activeClassName={s.active}>Manage Users</Link>

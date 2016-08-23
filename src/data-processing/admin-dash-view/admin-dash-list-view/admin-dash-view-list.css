@@ -1,0 +1,29 @@
+.lcpListHeader{
+    display:flex;
+    padding:0 1rem;
+    margin-bottom: 2%;
+    color: #ABAAAB;
+    /*font-size: 12pt;*/
+    font-weight: 900;
+}
+.collapseArrow{
+    width:2%;
+}
+.lcpClientList{
+    width:15%;
+}
+.lcpProgramHeader{
+    width:19%;
+}
+.lcpTitleHeader{
+    width:19%;
+}
+.lcpStatusHeader{
+    width:15%;
+}
+.lcpTotalParticipants{
+    width:15%;
+}
+.lcpEndDate{
+    width:15%;
+}
