@@ -1,12 +1,13 @@
-// import {ClockStore} from './clock/clock.store';
+import {DataProcessingStore} from './data-processing/data-processing.store';
 // import {GithubStore} from './github/github.store';
 
 class Store {
-    // github = new GithubStore();
+    title = 'React MobX Seed';
+    dataProcessing = new DataProcessingStore();
     // clock = new ClockStore();
 
     init() {
-        // this.github.init();
+        this.dataProcessing.init();
         // this.clock.init();
     }
 }
