@@ -1,0 +1,16 @@
+.loginTitle{
+	text-align: left;
+	color :#03C6EF;
+	font-style: bold;
+	font-size: 200%;
+	margin-bottom: 3%;
+}
+.loginLabel{
+	font-size: 190%;
+}
+.inputArea{
+	background-color: #F6F6F5;
+	/*Fixed Font size and Height */
+	height: 60px;
+    font-size: 25px;
+}

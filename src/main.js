@@ -6,7 +6,7 @@ import {App} from './app';
 
 // Styles
 import 'sanitize.css/sanitize.css';
-import './shared/styles/styles.css';
+import './assets/styles/styles.css';
 
 ReactDOM.render(<App store={store} history={browserHistory}/>,
     document.querySelector('main'));

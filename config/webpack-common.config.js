@@ -92,7 +92,7 @@ module.exports = {
         new HtmlPlugin({
             title: 'Plato',
             template: './src/index.html',
-            favicon: './src/shared/images/favicon.ico',
+            favicon: './src/assets/images/favicon.ico',
             inject: true
         }),
         new ExtractTextPlugin('main.css', {

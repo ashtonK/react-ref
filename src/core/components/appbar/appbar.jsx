@@ -1,6 +1,6 @@
 import React from 'react';
 import css from './appbar.css';
-import image from '../images/Plato-Blue-01.svg';
+import image from '../../../assets/images/Plato-Blue-01.svg';
 
 export default class Appbar extends React.Component{
     render(){

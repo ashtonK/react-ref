@@ -3,19 +3,19 @@ import {Route, IndexRoute} from 'react-router';
 
 import {DataProcessing} from './data-processing';
 import {DataCollection} from './data-collection';
-import {Error} from './data-collection/error';
-import {Invalid} from './data-collection/invalid';
-import {Done} from './data-collection/survey-done';
-import {SurveyInfo} from './data-collection/survey-info';
-import {SurveyQuestions} from './data-collection/survey-questions';
-import {SurveyConfirm} from './data-collection/survey-confirm';
+import {Error} from './core/components/error';
+import {Invalid} from './data-collection/components/invalid';
+import {Done} from './data-collection/components/survey-done';
+import {SurveyInfo} from './data-collection/components/survey-info';
+import {SurveyQuestions} from './data-collection/components/survey-questions';
+import {SurveyConfirm} from './data-collection/components/survey-confirm';
 
-import {Login} from './data-processing/login';
-import {ManageUsers} from './data-processing/manage-users';
-import {Home} from './data-processing/home';
-import {ReviewList} from './data-processing/home/review-list';
-import {ReviewPage} from './data-processing/home/review-page';
-import {CreateReview} from './data-processing/create-review';
+import {Login} from './data-processing/components/login';
+import {ManageUsers} from './data-processing/components/manage-users';
+import {Home} from './data-processing/components/home';
+import {ReviewList} from './data-processing/components/home/review-list';
+import {ReviewPage} from './data-processing/components/home/review-page';
+import {CreateReview} from './data-processing/components/create-review';
 
 
 export let routes = (
