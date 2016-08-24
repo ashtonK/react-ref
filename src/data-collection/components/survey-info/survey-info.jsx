@@ -1,7 +1,7 @@
 import React from 'react';
 import css from './survey-info.css';
-import {firebase} from '../../firebase';
-import {QuestionItem} from '../shared/question-item';
+// import {firebase} from '../../firebase';
+import {QuestionItem} from '../question-item';
 
 export default class SurveyInfo extends React.Component{
     constructor(props){
@@ -12,11 +12,11 @@ export default class SurveyInfo extends React.Component{
         };
     }
     componentWillMount(){
-        this.ref = firebase.syncState('lcps',{
-            context:this,
-            state:'lcps',
-            asArray:true
-        });
+        // this.ref = firebase.syncState('lcps',{
+        //     context:this,
+        //     state:'lcps',
+        //     asArray:true
+        // });
     }
     render(){
         console.log('Info');

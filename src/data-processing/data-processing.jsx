@@ -1,6 +1,6 @@
 import React from 'react';
-import {Appbar} from '../shared/appbar';
-import {Navbar} from './shared/navbar';
+import {Appbar} from '../core/components/appbar';
+import {Navbar} from './components/navbar';
 import css from './data-processing.css';
 
 

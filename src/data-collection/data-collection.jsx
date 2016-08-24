@@ -1,8 +1,8 @@
 import React from 'react';
-import {Appbar} from '../shared/appbar';
-import {QuestionNav} from './shared/question-nav';
+import {Appbar} from '../core/components/appbar';
+import {QuestionNav} from './components/question-nav';
 import css from './data-collection.css';
-import {firebase} from '../firebase';
+// import {firebase} from '../firebase';
 // import {SurveyInfo} from './survey-info';
 
 
@@ -13,13 +13,6 @@ export default class DataCollection extends React.Component{
         this.state = {
             categories: [],
         };
-    }
-    componentWillMount(){
-        this.ref = firebase.syncState('categories',{
-            context:this,
-            state:'categories',
-            asArray:true
-        });
     }
     render(){
         console.log('Survey');
