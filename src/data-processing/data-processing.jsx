@@ -11,21 +11,18 @@ export default class DataProcessing extends React.Component{
         super(props);
     }
     render(){
-        const {dataProcessing} = this.props.store;
-        const {test} = dataProcessing;
-        console.log('Processing');
         return(
             <div>
-            <p>{test}</p>
+                <div>{this.props.store.dataProcessing.test}</div>
                 <Appbar></Appbar>
                 <Navbar></Navbar>
                 <div className={css.mainPage}>
-                    <div className={css.pageContainer}>
+                    <div store ={this.props.store} className={css.pageContainer}>
                         {this.props.children}
                     </div>
                 </div>
             </div>
-        );
+            );
     }
 }
 

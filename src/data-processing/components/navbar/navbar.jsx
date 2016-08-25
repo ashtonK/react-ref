@@ -11,6 +11,8 @@ export default class Navbar extends React.Component {
         console.log('Navbar');
         return(
             <nav>
+            <div>{this.props.display}</div>
+            <div>{this.props.test}</div>
                 <ul className={s.navigation}>
                     <li className={s.navListItem}>
                         <IndexLink to="/processing/home" className={s.navOption} activeClassName={s.active}>Home</IndexLink>
