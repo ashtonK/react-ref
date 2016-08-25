@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "start": "SET NODE_ENV=development && webpack-dev-server --hot --inline",
-    "build": "SET NODE_ENV=production del dist && webpack -p",
+    "build": "SET NODE_ENV=production del dist && webpack-dev-server --hot --inline",
     "test": "karma start",
     "test:watch": "npm test -- --no-single-run --auto-watch",
     "lint": "eslint src --ext .js,.jsx",
