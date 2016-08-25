@@ -1,21 +1,20 @@
 import {DataProcessingStore} from './data-processing/data-processing.store';
-<<<<<<< HEAD
-
-=======
 import {AuthStore} from './data-processing/stores/auth.store';
+import {ReviewStore} from './data-processing/stores/review.store';
 import authService from './data-processing/services/auth.service';
 import {browserHistory} from 'react-router';
->>>>>>> 5a3e9798552f81175525be04cb4bb34033c0e9e4
 
 class Store {
     title = 'React MobX Seed';
     dataProcessing = new DataProcessingStore();
 
     authStore = new AuthStore();
+    reviewStore = new ReviewStore();
 
     init() {
         this.dataProcessing.init();
         this.authStore.init();
+        this.reviewStore.init();
         this.checkLogin();
     }
     checkLogin(){
