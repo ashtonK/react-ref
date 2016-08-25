@@ -4,7 +4,6 @@ import {observer, Provider} from 'mobx-react';
 import {routes} from '../../routes';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-// import {grey400} from 'material-ui/styles/colors';
 
 const muiTheme = getMuiTheme({
     fontFamily: 'Roboto, sans-serif',

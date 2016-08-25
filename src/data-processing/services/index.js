@@ -1,4 +1,3 @@
-export {default as AuthService} from './auth.service';
 export {default as ClientService} from './client.service';
 export {default as ParticipantService} from './participant.service';
 export {default as ProgramService} from './program.service';

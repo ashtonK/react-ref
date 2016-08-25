@@ -1,8 +1,7 @@
 const firebaseConfig =  {
-    apiKey: 'AIzaSyB4xq6G3s4NPMs5PQhfUJGukDmn_o_BNKA',
-    authDomain: 'plato-dev-8961b.firebaseapp.com',
-    databaseURL: 'https://plato-dev-8961b.firebaseio.com',
-    storageBucket: 'plato-dev-8961b.appspot.com',
+    apiKey: 'AIzaSyAgYdhbehAxeuaCmvApjlB_CwRObPgPcys',
+    authDomain: 'plato-dev-greg.firebaseapp.com',
+    databaseURL: 'https://plato-dev-greg.firebaseio.com',
+    storageBucket: 'plato-dev-greg.appspot.com',
 };
-
 export default firebaseConfig;
