@@ -9,11 +9,11 @@ import {observer, inject} from 'mobx-react';
 export default class DataProcessing extends React.Component{
     constructor(props){
         super(props);
+        this.props.store.checkLogin();
     }
     render(){
         return(
             <div>
-                <div>{this.props.store.dataProcessing.test}</div>
                 <Appbar></Appbar>
                 <Navbar></Navbar>
                 <div className={css.mainPage}>

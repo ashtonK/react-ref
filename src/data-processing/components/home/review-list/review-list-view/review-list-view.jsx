@@ -10,5 +10,3 @@ export default class ReviewListView extends React.Component {
         );
     }
 }
-
-

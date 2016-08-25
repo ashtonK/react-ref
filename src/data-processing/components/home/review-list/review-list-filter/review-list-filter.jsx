@@ -1,7 +1,6 @@
 import React from 'react';
 
 export default class ReviewListFilter extends React.Component {
-
     render() {
         return (
             <div>
@@ -10,5 +9,3 @@ export default class ReviewListFilter extends React.Component {
         );
     }
 }
-
-
