@@ -21,6 +21,9 @@ export default class Navbar extends React.Component {
                     <li className={s.navListItem}>
                         <Link to="/processing/createReview" className={s.navOption} activeClassName={s.active}>Create New Review</Link>
                     </li>
+                    <li className={s.navListItem}>
+                        <Link to="/processing/report" className={s.navOption} activeClassName={s.active}>Report</Link>
+                    </li>
                 </ul>
             </nav>
         );

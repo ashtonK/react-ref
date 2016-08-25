@@ -35,10 +35,10 @@ export let routes = (
                 <IndexRoute  component={ReviewList}>
                 </IndexRoute>
                 <Route path="review" component={ReviewPage}/>
-                <Route path="report" component={Report}/>
             </Route>
             <Route path="manageUsers" component={ManageUsers}></Route>
             <Route path="createReview" component={CreateReview}></Route>
+            <Route path="report" component={Report}></Route>
         </Route>
     </div>
 );

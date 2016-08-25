@@ -8,5 +8,4 @@ import {App} from './app';
 import 'sanitize.css/sanitize.css';
 import './assets/styles/styles.css';
 
-ReactDOM.render(<App store={store} history={browserHistory}/>,
-    document.querySelector('main'));
+ReactDOM.render(<App store={store} history={browserHistory}/>, document.querySelector('main'));
