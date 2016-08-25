@@ -16,6 +16,7 @@ import {Home} from './data-processing/components/home';
 import {ReviewList} from './data-processing/components/home/review-list';
 import {ReviewPage} from './data-processing/components/home/review-page';
 import {CreateReview} from './data-processing/components/create-review';
+import {Report} from './data-processing/components/reports';
 
 
 export let routes = (
@@ -34,6 +35,7 @@ export let routes = (
                 <IndexRoute  component={ReviewList}>
                 </IndexRoute>
                 <Route path="review" component={ReviewPage}/>
+                <Route path="report" component={Report}/>
             </Route>
             <Route path="manageUsers" component={ManageUsers}></Route>
             <Route path="createReview" component={CreateReview}></Route>
