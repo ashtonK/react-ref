@@ -4,6 +4,10 @@ import {Appbar} from '../../../core/components/appbar';
 // import css from './Login.css';
 import {AuthService} from '../../services';
 
+import {observer, inject} from 'mobx-react';
+
+@inject('store')
+@observer
 export default class Login extends React.Component {
     // signIn(event, email, password){
     //     console.log('Method');
@@ -43,11 +47,15 @@ export default class Login extends React.Component {
 //     </div>
 // </form>
     render() {
+        const {dataProcessing} = this.props.store;
+        const {authStore} = dataProcessing;
+        const {authTest} = authStore;
         console.log('Login');
         return (
             <div>
                 <Appbar></Appbar>
                 <h2>Login Page</h2>
+                <p>{authTest}</p>
                 <div><Link to="/processing">Processing</Link></div>
                 <div><Link to="/survey">Survey</Link></div>
                 <button onClick={this.debug}>Debug</button>
