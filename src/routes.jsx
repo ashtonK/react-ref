@@ -14,7 +14,6 @@ import {Login} from './data-processing/components/login';
 import {ManageUsers} from './data-processing/components/manage-users';
 import {Home} from './data-processing/components/home';
 import {ReviewList} from './data-processing/components/home/review-list';
-import {ReviewPage} from './data-processing/components/home/review-page';
 import {CreateReview} from './data-processing/components/create-review';
 import {Report} from './data-processing/components/reports';
 
@@ -34,7 +33,6 @@ export let routes = (
             <Route path="home" component={Home}>
                 <IndexRoute  component={ReviewList}>
                 </IndexRoute>
-                <Route path="review" component={ReviewPage}/>
             </Route>
             <Route path="manageUsers" component={ManageUsers}></Route>
             <Route path="createReview" component={CreateReview}></Route>
