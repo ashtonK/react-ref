@@ -64,6 +64,7 @@
   "dependencies": {
     "babel-polyfill": "^6.9.1",
     "chart.js": "^2.2.1",
+    "classnames": "^2.2.5",
     "d3": "^4.2.2",
     "firebase": "^3.3.0",
     "material-ui": "^0.15.4",

@@ -1,6 +1,7 @@
 import {DataProcessingStore} from './data-processing/data-processing.store';
 import {AuthStore} from './data-processing/stores/auth.store';
 import {ReviewStore} from './data-processing/stores/review.store';
+import {ReportStore} from './data-processing/stores/report.store';
 import authService from './data-processing/services/auth.service';
 import {browserHistory} from 'react-router';
 
@@ -10,11 +11,13 @@ class Store {
 
     authStore = new AuthStore();
     reviewStore = new ReviewStore();
+    reportStore = new ReportStore();
 
     init() {
         this.dataProcessing.init();
         this.authStore.init();
         this.reviewStore.init();
+        this.reportStore.init();
         this.checkLogin();
     }
     checkLogin(){
