@@ -19,7 +19,6 @@ export default class SurveyInfo extends React.Component{
         // });
     }
     render(){
-        console.log('Info');
         let welcomeTitle = 'Welcome to the questionnaire ';
         let welcomeMessage =
             `

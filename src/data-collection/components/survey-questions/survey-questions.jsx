@@ -6,7 +6,6 @@ export default class SurveyQuestions extends React.Component{
     render(){
         let welcomeTitle = 'Question';
         let welcomeMessage = 'See questions:';
-        console.log('Quesion');
         return(
             <div>
                 <div className={css.participantInfoTitle}>{welcomeTitle}</div>
