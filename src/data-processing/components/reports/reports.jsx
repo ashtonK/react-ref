@@ -1,5 +1,6 @@
 import React from 'react';
 import OverallRating from './components/overall-rating/overall-rating';
+import {QuestionBreakdown} from './components/question-breakdown';
 
 export default class Report extends React.Component {
     render() {
@@ -7,7 +8,9 @@ export default class Report extends React.Component {
         return (
             <div>
                 <OverallRating/>
+                <QuestionBreakdown></QuestionBreakdown>
             </div>
         );
     }
 }
+
