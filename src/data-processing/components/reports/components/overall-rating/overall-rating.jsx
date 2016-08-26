@@ -3,58 +3,42 @@ import NVD3Chart from 'react-nvd3';
 
 export default class OverallRating extends React.Component {
     render() {
-        console.log('Reports');
+        console.log('overall ratings');
         var average = 4; //This needs to be pulled from store, less than or equal to 5
         console.log(average);
         var leftover = 5 - average; //this is the rest of the pie chart, 5-average
+        console.log(leftover);
         var averagePieData = [
             {
                 'label': 'Average: ',
                 'value': average
             },
             {
-                'label': '',
+                'label' : '',
                 'value': leftover
             }
         ];
-        var averageBarData = [
+        console.log(averagePieData);
+        var averageLineData = [
             {
                 'label': 'Q1',
-                'value': 1
+                'value': average
             },
             {
                 'label': 'Q2',
-                'value': 2
-            },
-            {
-                'label': 'Q3',
-                'value': 3
-            },
-            {
-                'label': 'Q4',
-                'value': 4
-            },
-            {
-                'label': 'Q5',
-                'value': 5
-            },
-            {
-                'label': 'Q6',
-                'value': 2.5
-            },
-            {
-                'label': 'Q7',
-                'value': 4.4
+                'value': leftover
             }
         ];
+        console.log(averageLineData);
         return (
             <div>
-                <div> Charts and Reports </div>
-                <div>
-                    <NVD3Chart id="donutChart" type="pieChart" datum={averagePieData} x="label" y="value"/>
+                <div> Donut Average Chart </div>
+                <div className='averageDonut'>
+                    <NVD3Chart id="donutChart" type="pieChart" datum={averagePieData} x="label" y="value" donut="true" showLabels="false"/>
                 </div>
-                <div>
-                    <NVD3Chart id="barChartAverages" type="discreteBarChart" datum={averageBarData} x="label" y="value"/>
+                <div> Multi Bar Chart </div>
+                <div className='averageQuestions'>
+                    <NVD3Chart id="lineChart" type="lineChart" datum={averageLineData} x="label" y="value"></NVD3Chart>
                 </div>
             </div>
         );
