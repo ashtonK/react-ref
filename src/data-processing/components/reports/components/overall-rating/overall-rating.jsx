@@ -6,9 +6,7 @@ import styles from './overall-rating.css';
 
 export default class OverallRating extends React.Component {
     render() {
-        console.log('overall ratings');
         var average = 4; //This needs to be pulled from store, less than or equal to 5
-        console.log(average);
         var leftover = 5 - average; //this is the rest of the pie chart, 5-average
         console.log(leftover);
         var averagePieData = [

@@ -8,7 +8,6 @@ injectTapEventPlugin();
 
 export default class Navbar extends React.Component {
     render() {
-        console.log('Navbar');
         return(
             <nav>
             <div>{this.props.display}</div>

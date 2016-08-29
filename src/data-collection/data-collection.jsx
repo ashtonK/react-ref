@@ -15,7 +15,6 @@ export default class DataCollection extends React.Component{
         };
     }
     render(){
-        console.log('Survey');
         return(
             <div>
                 <Appbar></Appbar>
