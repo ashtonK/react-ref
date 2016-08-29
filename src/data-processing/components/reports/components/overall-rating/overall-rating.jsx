@@ -1,5 +1,8 @@
 import React from 'react';
 import NVD3Chart from 'react-nvd3';
+import BarChart from 'react-chartjs';
+
+import styles from './overall-rating.css';
 
 export default class OverallRating extends React.Component {
     render() {
@@ -10,7 +13,7 @@ export default class OverallRating extends React.Component {
         console.log(leftover);
         var averagePieData = [
             {
-                'label': 'Average: ',
+                'label': 'Average:',
                 'value': average
             },
             {
@@ -19,26 +22,29 @@ export default class OverallRating extends React.Component {
             }
         ];
         console.log(averagePieData);
-        var averageLineData = [
-            {
-                'label': 'Q1',
-                'value': average
-            },
-            {
-                'label': 'Q2',
-                'value': leftover
-            }
-        ];
-        console.log(averageLineData);
+        var averageBarData = {
+            labels: ["Q1", "Q2", "Q3", "Q4", "Q5"],
+            datasets: [
+                {
+                    label: "Bar Chart Example",
+                    data: [1,2,3,4,2.5],
+                }
+            ]
+
+        };
         return (
             <div>
-                <div> Donut Average Chart </div>
-                <div className='averageDonut'>
+                <div className={styles.averageDonut}>
+                    <h3> Donut Average Chart </h3>
+                    <div className={styles.donutChart}>
                     <NVD3Chart id="donutChart" type="pieChart" datum={averagePieData} x="label" y="value" donut="true" showLabels="false"/>
+                    </div>
                 </div>
-                <div> Multi Bar Chart </div>
-                <div className='averageQuestions'>
-                    <NVD3Chart id="lineChart" type="lineChart" datum={averageLineData} x="label" y="value"></NVD3Chart>
+                <div className={styles.averageQuestions}>
+                    <h3> Multi Bar Chart </h3>
+                    <div className={styles.barChart}>
+                    <BarChart data={averageBarData} width="400" height="400"/>
+                    </div>
                 </div>
             </div>
         );
