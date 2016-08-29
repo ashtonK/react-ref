@@ -1,34 +1,11 @@
 import React from 'react';
-// import NVD3Chart from 'react-nvd3';
-// import BarChart from 'react-chartjs';
-// import styles from './overall-rating.css';
-import {BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, PieChart, Pie} from 'Recharts';
+import styles from './overall-rating.css';
+import {BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, PieChart, Pie, RadialBar, RadialBarChart} from 'Recharts';
 
 export default class OverallRating extends React.Component {
     render() {
         var average = 4; //This needs to be pulled from store, less than or equal to 5
         var leftover = 5 - average; //this is the rest of the pie chart, 5-average
-        // var averagePieData = [
-        //     {
-        //         'label': 'Average:',
-        //         'value': average
-        //     },
-        //     {
-        //         'label' : '',
-        //         'value': leftover
-        //     }
-        // ];
-        // console.log(averagePieData);
-        // var averageBarData = {
-        //     labels: ['Q1', 'Q2', 'Q3', 'Q4', 'Q5'],
-        //     datasets: [
-        //         {
-        //             data: [1,2,3,4,2.5],
-        //         }
-        //     ]
-
-        // };
-        // console.log(averageBarData);
         const barChartData = [
             { name: '1', score: 1 },
             { name: '2', score: 2 },
@@ -96,14 +73,17 @@ export default class OverallRating extends React.Component {
             { name: 'Score', value: average },
             { name: '', value: leftover }
         ];
+        const radialChartData = [
+            { name: 'average', value: average }
+        ];
         // const COLORS = ['#0088FE', '#FFFFFF'];
         return (
             <div>
-                <PieChart width={800} height={400}>
-                    <Pie data={pieChartData} cx={500} cy={200} innerRadius={40} outerRadius={80} fill="#82ca9d"/>
+                <PieChart width={400} height={400} className={styles.averageDonut}>
+                    <Pie data={pieChartData} cx={100} cy={200} innerRadius={40} outerRadius={80} fill="#82ca9d"/>
                     <Tooltip/>
                 </PieChart>
-                <BarChart width={600} height={300} data={barChartData} margin={{ top: 5, right: 30, left: 20, bottom: 5 }}>
+                <BarChart width={600} height={300} data={barChartData} margin={{ top: 5, right: 30, left: 20, bottom: 5 }} className={styles.averageQuestions}>
                     <XAxis dataKey="name"/>
                     <YAxis/>
                     <CartesianGrid strokeDasharray="3 3"/>
@@ -111,6 +91,9 @@ export default class OverallRating extends React.Component {
                     <Legend />
                     <Bar dataKey="score" fill="#82ca9d" />
                 </BarChart>
+                <RadialBarChart width={500} height={300} cx={150} cy={150} innerRadius={20} outerRadius={140} barSize={30} data={radialChartData}>
+                    <RadialBar minAngle={15} label background clockWise={true} dataKey='Total Average'/>
+                </RadialBarChart>
             </div>
         );
     }

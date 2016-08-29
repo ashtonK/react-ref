@@ -1,15 +1,6 @@
 .averageDonut{
     display:inline-block;
 }
-.donutChart{
-    height: 400px;
-    width: 400px;
-}
 .averageQuestions{
     display:inline-block;
-}
-.barChart{
-    border:black, 5px;
-    width: 400px;
-    height: 400px;
 }
