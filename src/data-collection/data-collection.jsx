@@ -2,8 +2,6 @@ import React from 'react';
 import {Appbar} from '../core/components/appbar';
 import {QuestionNav} from './components/question-nav';
 import css from './data-collection.css';
-// import {firebase} from '../firebase';
-// import {SurveyInfo} from './survey-info';
 
 
 

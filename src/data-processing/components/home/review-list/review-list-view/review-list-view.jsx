@@ -17,10 +17,8 @@ export default class ReviewListView extends React.Component {
         const {reviewListDB} = reviewStore;
         return (
 			<div>
-            <ul>
             {reviewListDB.map(review =>
-                <li><ReviewListElement reviewInfo={review} onSelectReview={this.onSelectReview} ></ReviewListElement></li>)}
-            </ul>
+                <div><ReviewListElement reviewInfo={review} onSelectReview={this.onSelectReview} ></ReviewListElement></div>)}
             <button onClick={this.Debug}>DEBUG</button>
 			</div>
 			);
