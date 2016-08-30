@@ -16,12 +16,20 @@ export class ReviewStore {
     editExistingReview(reviewId){
         this.editedReviewId = reviewId;
         console.log('store has :'+this.editedReviewId);
-        this.editedReview=null;
+        for(var review of this.reviewListDB){
+            if(review.key==reviewId){
+                this.editedReview=review;
+                break;
+            }
+        }
     }
     @action
     fetchReviewList() {
         this.reviewListDB=[];
         reviewService.fetchReviews(this.reviewListDB);
+    }
+    @action
+    setCurrentReview(){
     }
 
 

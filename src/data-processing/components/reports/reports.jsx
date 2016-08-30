@@ -8,11 +8,11 @@ import {QuestionBreakdown} from './components/question-breakdown';
 export default class Report extends React.Component {
     render() {
         const {reviewStore} = this.props.store;
-        const {editedReviewId} = reviewStore;
+        const {editedReview} = reviewStore;
         console.log('Reports page');
         return (
             <div>
-            <div>{editedReviewId}</div>
+            <div>{editedReview.key}</div>
                 <OverallRating/>
                 <QuestionBreakdown></QuestionBreakdown>
             </div>
