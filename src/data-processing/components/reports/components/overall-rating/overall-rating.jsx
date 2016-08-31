@@ -77,7 +77,7 @@ export default class OverallRating extends React.Component {
         ];
         const COLORS = ['#32CD32', '#D3D3D3'];
         return (
-            <div className={styles.container}>
+            <div>
                 <PieChart width={200} height={200} className={styles.averageDonut}>
                     <Pie data={pieChartData} cx='50%' cy='50%' innerRadius={40} outerRadius={80} fill="#82ca9d" startAngle={90} endAngle={-270}>
                         {
