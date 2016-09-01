@@ -17,7 +17,7 @@ class Store {
         this.dataProcessing.init();
         this.authStore.init();
         this.reviewStore.init();
-        this.reportStore.init();
+        // this.reportStore.init();
         this.checkLogin();
     }
     checkLogin(){
