@@ -17,7 +17,7 @@ export class ReviewStore {
         this.editedReviewId = reviewId;
         console.log('store has :'+this.editedReviewId);
         for(var review of this.reviewListDB){
-            if(review.key==reviewId){
+            if(review.key==this.editedReviewId){
                 this.editedReview=review;
                 break;
             }

@@ -1,0 +1,31 @@
+.reviewListHeader{
+    display: flex;
+    padding: 10px;
+
+}
+.reviewColumHeader{
+    font-weight: bold;
+    color: grey;
+    font-size: 20px;
+
+}
+.iconColumn{
+    width: 5%;
+}
+.clientColumn{
+    width: 20%;
+}
+
+.programColumn{
+    width: 20%;
+}
+.statusColumn{
+    width: 15%;
+
+}
+.partCountColumn{
+    width: 20%;
+}
+.dateColumn{
+    width: 20%;
+}

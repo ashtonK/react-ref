@@ -13,10 +13,10 @@ class ReviewService {
     }
     fetchReviews(reviewListDB) {
         firebase.database().ref('/reviews/')
-            .once('value',function(snapshot){
-                snapshot.forEach(function(childSnapshot){
-                    var reviewInfo= childSnapshot.val();
-                    reviewInfo.key =childSnapshot.key;
+            .once('value',function(data){
+                data.forEach(function(childData){
+                    var reviewInfo= childData.val();
+                    reviewInfo.key =childData.key;
                     reviewListDB.push(reviewInfo);
                 });
             });

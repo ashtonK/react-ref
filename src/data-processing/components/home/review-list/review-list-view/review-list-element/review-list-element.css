@@ -1,26 +1,57 @@
+.reviewContainer{
+    background-color: cornflowerblue;
+}
 .reviewHeader {
-    background-color: #eee;
-    color: #444;
+    background-color:white;
     cursor: pointer;
-    padding: 18px;
     width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
+    border-bottom-color: #D3D3D3;
+    border-bottom-style: solid;
+    border-width: 2;
+    transition: 1s;
+    display:flex;
+    align-items: flex-start;
+    padding: 10px;
+}
+.reviewHeaderText {
+    color: #444;
+    font-size: 20px;
+}
+.reviewColumn{
+    font-size:18px;
+}
+.iconColumn{
+    width: 5%;
+}
+.clientColumn{
+    width: 20%;
+    color: #04C5F0;
 }
 
-.review_list_element_header.active, .review_list_element_header:hover {
-    background-color: #ddd;
+.programColumn{
+    width: 20%;
+}
+.statusColumn{
+    width: 15%;
+
+}
+.partCountColumn{
+    width: 20%;
+}
+.dateColumn{
+    width: 20%;
 }
 
-.review_list_element_content {
-    padding: 0 18px;
-    display: none;
-    background-color: white;
-}
-
-.review_list_element_content.show {
+.reviewBodyActive {
     display: block;
+    background-color: white;
+    transition: display 1s;
+}
+.reviewBodyInactive {
+    display: none;
+    background-color: #D3D3D3;
+    transition: display 1s;
+}
+.material-icons{
+    color: yellow;
 }

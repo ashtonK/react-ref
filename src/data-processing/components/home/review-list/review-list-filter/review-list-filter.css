@@ -1,0 +1,17 @@
+.filterBarContainer{
+    background-color: #FBF7F6;
+    display: flex;
+}
+.filterContainer{
+    display:flex;
+    width: 80%;
+}
+.viewOptionContainer{
+    display: flex;
+    justify-content: flex-end;
+    width:20%;
+}
+.reviewListOptionIcon{
+    align-self: flex-end;
+    margin-right: 20%;
+}

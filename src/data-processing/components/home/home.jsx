@@ -12,7 +12,6 @@ export default class Home extends React.Component {
 
         return(
             <div>
-                <h2>Home</h2>
                 <div>{this.props.children}</div>
             </div>
         );
